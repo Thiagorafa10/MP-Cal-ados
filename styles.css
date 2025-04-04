@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Banner principal */
+.banner {
+    position: relative;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.doar-button {
+    background-color: #128C7E;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.doar-button:hover {
+    background-color: #0e6e60;
+}
+
+/* Banner do logotipo com fundo preto */
+.logo-banner-section {
+    background-color: #2B2922;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-banner-section img {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Produtos */
+#products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #1ebe5d;
+}
+
+/* Responsivo para Tablets */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .logo-banner-section {
+        padding: 20px 0;
+    }
+
+    .logo-banner-section img {
+        max-width: 180px;
+    }
+}
+
+/* Responsivo para Celulares */
+@media (max-width: 480px) {
+    .banner {
+        padding: 40px 10px;
+    }
+
+    .banner h1 {
+        font-size: 1.5em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+
+    .doar-button {
+        font-size: 1em;
+        padding: 10px 16px;
+    }
+
+    .logo-banner-section {
+        padding: 15px 0;
+    }
+
+    .logo-banner-section img {
+        max-width: 120px; /* Reduz o tamanho do logotipo para celulares */
+    }
+}
